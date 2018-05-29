@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: serendipity-phone-rails_production
-  username: serendipity-phone-rails
-  password: <%= ENV['SERENDIPITY-PHONE-RAILS_DATABASE_PASSWORD'] %>
+  database: heroku_63271357eb1a2d3
+  username: b1ff82bcedca3d
+  password: <%= ENV['DATABASE_PASSWORD'] %>
