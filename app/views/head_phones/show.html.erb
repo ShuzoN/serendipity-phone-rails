@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @head_phone.name %>
+</p>
+
+<p>
+  <strong>Tendency:</strong>
+  <%= @head_phone.tendency %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @head_phone.price %>
+</p>
+
+<%= link_to 'Edit', edit_head_phone_path(@head_phone) %> |
+<%= link_to 'Back', head_phones_path %>

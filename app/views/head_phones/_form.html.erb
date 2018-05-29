@@ -1,0 +1,32 @@
+<%= form_with(model: head_phone, local: true) do |form| %>
+  <% if head_phone.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(head_phone.errors.count, "error") %> prohibited this head_phone from being saved:</h2>
+
+      <ul>
+      <% head_phone.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tendency %>
+    <%= form.text_field :tendency %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
